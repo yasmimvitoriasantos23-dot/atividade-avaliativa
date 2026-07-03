@@ -1,0 +1,80 @@
+body {
+    background-color: #121212;
+    color: #ffffff;            
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #fcfcfc; 
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: #660000;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /
+}
+
+
+#botaoCurtir {
+    background-color: #222;
+    color: #690000;
+    border: 1px solid #444;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#botaoCurtir:hover {
+    background-color: #920202;
+}sar o mouse */
+
+#botaoCurtir span {
+    font-weight: bold;
+    margin-left: 8px;
+    color: #020101;
+}
+
+#botaoCurtir:hover span {
+    color: #b90909;
+}
+
+#acessivel {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#acessivel button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#acessivel button:hover {
+    background-color: #555;
+}

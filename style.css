@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
 body {
     background-color: #121212;
     color: #ffffff;            
@@ -9,14 +11,28 @@ body {
 }
 
 h1 {
-    color: #fcfcfc; 
+    font-family: 'Creepster', cursive;
+    font-size: 5rem; /* Um pouco maior para destacar o efeito */
+    color: #ff0000;
+    letter-spacing: 4px;
     text-align: center;
-    font-size: 3rem;
-    letter-spacing: 2px;
+    position: relative;
+    
+    /* Múltiplas camadas de sombra para criar o efeito de gotas escorrendo */
+    text-shadow: 
+        0 2px 0 #8b0000,
+        0 4px 0 #7a0000,
+        0 6px 2px rgba(0, 0, 0, 0.8),
+        1px 8px 5px rgba(139, 0, 0, 0.5),
+        -1px 12px 10px rgba(139, 0, 0, 0.4),
+        0 16px 15px rgba(139, 0, 0, 0.3);
+
+    /* Animação para dar um efeito dinâmico de "liquido" */
+    animation: escorrer 3s ease-in-out infinite alternate;
 }
 
 h3 {
-    color: #660000;
+    color: #a80000;
     border-bottom: 1px solid #333;
     padding-bottom: 5px;
 }
@@ -33,18 +49,19 @@ img {
 
 #botaoCurtir {
     background-color: #222;
-    color: #690000;
+    color: #a80000;
     border: 1px solid #444;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 20px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 #botaoCurtir:hover {
     background-color: #920202;
-}sar o mouse */
+    color: #fff;
+}
 
 #botaoCurtir span {
     font-weight: bold;
@@ -77,4 +94,23 @@ img {
 
 #acessivel button:hover {
     background-color: #555;
+}
+
+/* Animação que faz o "sangue" se mover levemente para baixo */
+@keyframes escorrer {
+    0% {
+        text-shadow: 
+            0 2px 0 #8b0000,
+            0 4px 0 #7a0000,
+            0 6px 2px rgba(0, 0, 0, 0.8),
+            1px 8px 5px rgba(139, 0, 0, 0.5);
+    }
+    100% {
+        text-shadow: 
+            0 2px 0 #8b0000,
+            0 5px 0 #6a0000,
+            0 8px 3px rgba(0, 0, 0, 0.9),
+            1px 14px 12px rgba(139, 0, 0, 0.6),
+            -1px 20px 18px rgba(139, 0, 0, 0.4);
+    }
 }
